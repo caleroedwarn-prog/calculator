@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    
+</head>
+<body>
+    <div class="header">
+        <h2>Calero Calc</h2>
+    </div>
+        <div id="calculator">
+        <input id="display"  readonly>
+    <div id="operation">
+    <button onclick="pressDisplay1('AC')" class="operator" id="clearAll">AC</button>
+    <button onclick="pressDisplay('tan')" class="operator">tan</button> 
+    <button onclick="pressDisplay('cos')" class="operator">cos</button> 
+    <button onclick="pressDisplay('sin')" class="operator">sin</button> 
+    <button onclick="pressDisplay('^')" class="operator">^</button>  
+    <button onclick="pressDisplay('%')" class="operator">%</button>  
+    <button onclick="pressDisplay('/')" class="operator">/</button> 
+    <button onclick="pressDisplay('*')" class="operator">*</button>
+    <button onclick="pressDisplay('7')">7</button>
+    <button onclick="pressDisplay('8')">8</button>
+    <button onclick="pressDisplay('9')">9</button>
+    <button onclick="pressDisplay('-')" class="operator">-</button>
+    <button onclick="pressDisplay('4')">4</button>
+    <button onclick="pressDisplay('5')">5</button>
+    <button onclick="pressDisplay('6')">6</button>
+    <button onclick="pressDisplay('+')" class="operator">+</button>
+    <button onclick="pressDisplay('1')">1</button>
+    <button onclick="pressDisplay('2')">2</button>
+    <button onclick="pressDisplay('3')">3</button>
+    <button onclick="clearDisplay()" id="clear" class="operator">(<<)</button>
+    <button onclick="pressDisplay('.')">.</button>
+    <button onclick="pressDisplay('0')">0</button>
+    <button onclick="calculate()" id="equal" class="equal">=</button>
+     
+</div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
